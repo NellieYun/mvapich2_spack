@@ -27,14 +27,27 @@ compilers:
     target: x86_64
 - compiler:
     environment: {}
-    extra_rpaths: []
-    flags: {}
+    extra_rpaths: 
+     - /usr/lib64
+     - /usr/libexec/gcc/x86_64-redhat-linux/4.8.5
+     - /usr/lib/gcc/x86_64-redhat-linux/4.8.5
+     - /nv/ap5/usr-local-rhel7.4/pacerepov2/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/intel-18.0.1-7cbw2rpdcuv3hpj2txc4wqcjnjeiv7n6/compilers_and_libraries_2018.1.163/linux/compiler/lib/intel64
+    flags:
+      cflags: -O2 -axCORE-AVX2,CORE-AVX-I
+      cxxflags: -O2 -axCORE-AVX2,CORE-AVX-I
+      fflags: -O2 -axCORE-AVX2,CORE-AVX-I
+      fcflags: -O2 -axCORE-AVX2,CORE-AVX-I
     modules: []
     operating_system: rhel7
     paths:
-      cc: /nv/ap5/usr-local-rhel7.4/pacerepov2/spack/opt/spack/linux-rhel7-x86_64/gcc-8.1.0/intel-18.0.1-rfzhv4xzmmw5esr4wcvujvhbezpbggo3/compilers_and_libraries_2018.1.163/linux/bin/intel64/icc
-      cxx: /nv/ap5/usr-local-rhel7.4/pacerepov2/spack/opt/spack/linux-rhel7-x86_64/gcc-8.1.0/intel-18.0.1-rfzhv4xzmmw5esr4wcvujvhbezpbggo3/compilers_and_libraries_2018.1.163/linux/bin/intel64/icpc
-      f77: /nv/ap5/usr-local-rhel7.4/pacerepov2/spack/opt/spack/linux-rhel7-x86_64/gcc-8.1.0/intel-18.0.1-rfzhv4xzmmw5esr4wcvujvhbezpbggo3/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort
-      fc: /nv/ap5/usr-local-rhel7.4/pacerepov2/spack/opt/spack/linux-rhel7-x86_64/gcc-8.1.0/intel-18.0.1-rfzhv4xzmmw5esr4wcvujvhbezpbggo3/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort
+      #cc: /nv/ap5/usr-local-rhel7.4/pacerepov2/spack/opt/spack/linux-rhel7-x86_64/gcc-8.1.0/intel-18.0.1-rfzhv4xzmmw5esr4wcvujvhbezpbggo3/compilers_and_libraries_2018.1.163/linux/bin/intel64/icc
+      #cxx: /nv/ap5/usr-local-rhel7.4/pacerepov2/spack/opt/spack/linux-rhel7-x86_64/gcc-8.1.0/intel-18.0.1-rfzhv4xzmmw5esr4wcvujvhbezpbggo3/compilers_and_libraries_2018.1.163/linux/bin/intel64/icpc
+     # f77: /nv/ap5/usr-local-rhel7.4/pacerepov2/spack/opt/spack/linux-rhel7-x86_64/gcc-8.1.0/intel-18.0.1-rfzhv4xzmmw5esr4wcvujvhbezpbggo3/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort
+     # fc: /nv/ap5/usr-local-rhel7.4/pacerepov2/spack/opt/spack/linux-rhel7-x86_64/gcc-8.1.0/intel-18.0.1-rfzhv4xzmmw5esr4wcvujvhbezpbggo3/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort
+      
+      cc: /nv/ap5/usr-local-rhel7.4/pacerepov2/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/intel-18.0.1-7cbw2rpdcuv3hpj2txc4wqcjnjeiv7n6/compilers_and_libraries_2018.1.163/linux/bin/intel64/icc
+      cxx: /nv/ap5/usr-local-rhel7.4/pacerepov2/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/intel-18.0.1-7cbw2rpdcuv3hpj2txc4wqcjnjeiv7n6/compilers_and_libraries_2018.1.163/linux/bin/intel64/icpc
+      f77: /nv/ap5/usr-local-rhel7.4/pacerepov2/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/intel-18.0.1-7cbw2rpdcuv3hpj2txc4wqcjnjeiv7n6/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort
+      fc: /nv/ap5/usr-local-rhel7.4/pacerepov2/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/intel-18.0.1-7cbw2rpdcuv3hpj2txc4wqcjnjeiv7n6/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort
     spec: intel@18.0.1
     target: x86_64
